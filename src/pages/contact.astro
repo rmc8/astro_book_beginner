@@ -1,0 +1,20 @@
+---
+import Layout from "../components/layout.astro";
+---
+
+<Layout title="コンタクト">
+    <div class="wrapper">
+        <h1>Contact</h1>
+        <p>お気軽にご連絡ください。</p>
+        <form name="contact" method="POST">
+            <label for="name">おなまえ</label>
+            <input type="text" name="name" id="name" required />
+            <label for="email">メールアドレス</label>
+            <input type="text" name="email" id="email" required />
+            <label for="textarea">ご用件</label>
+            <textarea name="message" rows="10" id="textarea" required
+            ></textarea>
+            <button type="submit">送信</button>
+        </form>
+    </div>
+</Layout>
