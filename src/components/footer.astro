@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+import GithubLogo from "../images/github.svg";
+import LinkedinLogo from "../images/linkedin.svg";
+import XLogo from "../images/x.svg";
+import FacebookLogo from "../images/facebook.svg";
+---
+
+<footer>
+    <div>
+        <a href="/"><Image src={GithubLogo} alt="github" /></a>
+        <a href="/"><Image src={LinkedinLogo} alt="linkedin" /></a>
+        <a href="/"><Image src={XLogo} alt="x" /></a>
+        <a href="/"><Image src={FacebookLogo} alt="facebook" /></a>
+        <hr />
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+        <p>&copy; {new Date()} K</p>
+    </div>
+</footer>
