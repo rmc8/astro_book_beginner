@@ -17,6 +17,10 @@ type Blog = {
     body: string;
 };
 
+interface Props {
+    singleBlog: Blog;
+}
+
 export const getStaticPaths: GetStaticPaths = async () => {
     const allBlogs = await getCollection("blog");
     const pathData = allBlogs.map((singleBlog: Blog) => ({
